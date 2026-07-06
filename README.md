@@ -1,3 +1,5 @@
+## Exploring parallelization as an optimization method via LJP simulation.
+
 The original Lennard-Jones particle simulation was initially developed in JavaScript as an educational project. While suitable for demonstrating the underlying physics, its performance quickly became the limiting factor. Simulating even a few hundred particles resulted in very low frame rates due to the computational cost of evaluating pairwise interactions.
 
 To improve performance, the simulation was completely rewritten in **C**, resulting in a substantial speedup. The native implementation made it possible to simulate over **2000 particles in real time** (approximately 20 FPS on my hardware) without any parallelization, compared to the original JavaScript implementation which struggled to achieve even 1 FPS under similar conditions.
